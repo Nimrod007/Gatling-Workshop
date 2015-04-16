@@ -25,14 +25,14 @@ class Simple2 extends Simulation {
 		.exec(http("get home page")
 			.get("/nimrod.php")
 			.headers(headers_0))
-			.pause(1 seconds, 5 seconds) //pasue a random time 
+			.pause(1 seconds, 5 seconds)
 		.exec(http("expecting error")
 			.get("/nimrod.php?error=1")
-			.check(status.is(500)) //expecting to get 500 response 
+			.check(status.is(500))
 			.headers(headers_0))
 
 	val otherScn = scenario("User register/login Flow")
-				.feed(emailsAndPasswordFeed) //using a feeder to generate random email/users
+				.feed(emailsAndPasswordFeed)
 				.exec(http("register")
 					.post("/nimrod.php")
 					.headers(headers_0)
@@ -46,7 +46,5 @@ class Simple2 extends Simulation {
 					.formParam("loginpassword", "${pass}"))
 
 
-	//first scenario will be all 10 users at once
-	//second scenario will start 1-5 new users per seconds during 3 minutes
-	setUp(scn.inject(atOnceUsers(20)), otherScn.inject(rampUsersPerSec(1) to(5) during(3 minutes) randomized)).protocols(httpProtocol)
+	setUp(scn.inject(atOnceUsers(20)), otherScn.inject(rampUsersPerSec(1) to(5) during(1 minutes) randomized)).protocols(httpProtocol)
 }
