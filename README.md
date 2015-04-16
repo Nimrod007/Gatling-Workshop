@@ -1,5 +1,20 @@
 # Gatling-Workshop!
 
+##Servers:
+Gatling Workshop1 server: http://45.55.151.43
+
+Relic - https://rpm.newrelic.com/accounts/23428/applications/5683893
+
+Gatling Workshop2 server: http://188.166.112.45
+
+Relic - https://rpm.newrelic.com/accounts/23428/applications/5683776
+
+Create your own endpoint for testing: 
+
+http://45.55.151.43?new=YOUR-NAME
+
+http://188.166.112.45?new=YOUR-NAME
+
 ##cheat sheet:
 
 ### Pause:
