@@ -88,4 +88,6 @@ val scn = scenario("some scenario")
 ```
 Wiki: http://gatling.io/docs/2.0.0-RC2/session/feeder.html#feeder
 
-link 2 solution
+
+###Tweaks
+http://gatling.io/docs/2.0.0-RC2/general/operations.html
