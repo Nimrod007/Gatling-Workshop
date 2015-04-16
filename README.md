@@ -16,8 +16,7 @@ pause(min: Duration, max: Duration)
 ```scala 
       .exec(http("get some page").get("/some.php")).pause(1 seconds, 10 seconds)
 ```
-##### - Wiki:
-    http://gatling.io/docs/2.0.0-RC2/general/scenario.html
+Wiki: http://gatling.io/docs/2.0.0-RC2/general/scenario.html
  
  
 ### Checks:
@@ -46,16 +45,14 @@ val user2 = scenario("gatling 2").exec(http("get another page").get("/another.ph
 setUp(user1.inject(atOnceUsers(10)),
   user2.inject(atOnceUsers(25))).protocols(httpProtocol)
 ```
-##### - Wiki:
-    http://gatling.io/docs/2.0.0-RC2/general/concepts.html
+Wiki: http://gatling.io/docs/2.0.0-RC2/general/concepts.html
  
 ##### - Inject:
     2 scenarios , first is running all users at once, seconds is ramping up users starting with 100 and going up to 500 in 1 minute.
 ```scala 
 setUp(scn.inject(atOnceUsers(10)), otherScn.inject(rampUsersPerSec(100) to(500) during(1 minutes) randomized))
 ```
-##### - Wiki:
-      http://gatling.io/docs/2.0.0-RC2/general/simulation_setup.html#simulation-setup
+Wiki: http://gatling.io/docs/2.0.0-RC2/general/simulation_setup.html#simulation-setup
  
 ### Feeders:
 ##### - create a feeder:
@@ -71,5 +68,6 @@ val scn = scenario("some scenario")
 				.post("/nimrod.php")
 				.formParam("someParam", "${randomString}")
 ```
-Wiki:
-		    http://gatling.io/docs/2.0.0-RC2/session/feeder.html#feeder
+Wiki: http://gatling.io/docs/2.0.0-RC2/session/feeder.html#feeder
+
+link 2 solution
