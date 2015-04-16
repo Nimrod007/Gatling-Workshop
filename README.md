@@ -1,5 +1,7 @@
 # Gatling-Workshop!
 
+goto: https://github.com/Nimrod007/Gatling-Workshop
+
 ##Servers:
 Gatling Workshop1 server: http://45.55.151.43
 
