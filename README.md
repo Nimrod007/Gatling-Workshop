@@ -15,7 +15,10 @@ http://45.55.151.43?new=YOUR-NAME
 
 http://188.166.112.45?new=YOUR-NAME
 
-##cheat sheet:
+##Gatling Download:
+https://repo1.maven.org/maven2/io/gatling/highcharts/gatling-charts-highcharts-bundle/2.1.4/gatling-charts-highcharts-bundle-2.1.4-bundle.zip
+
+##Cheat Sheet:
 
 ### Pause:
  
