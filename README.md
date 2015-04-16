@@ -88,6 +88,48 @@ val scn = scenario("some scenario")
 ```
 Wiki: http://gatling.io/docs/2.0.0-RC2/session/feeder.html#feeder
 
-
 ###Tweaks
 http://gatling.io/docs/2.0.0-RC2/general/operations.html
+
+###Task 1:
+Download Gatling
+
+Unzip and go into /bin file
+
+Open the recorder.sh
+
+Before recording close all browser windows
+
+Set proxy to localhost:8000 (in your browser)
+
+Name the package and class
+
+Start recording
+
+Go to your endpoint (in the browser)
+
+Stop recording
+
+Exit the recorder
+
+Open the generated scala file in /user-files/simulations
+
+Change from 1 to 20 users.
+
+Run the gatling.sh & run your new scenario
+
+View the report
+
+###Task 2:
+To the current scenario add another GET request http://45.55.151.43/nimrod.php?error=1
+
+Pause a random 1-5 seconds between the requests
+
+This request return’s 500 response, add a check for status
+
+Add another scenario, this time a user registers and login, the register is with a random generated email and password.
+
+The previous scenario is running all users at once (we ran 20 last time), in the new we will ramp up users in a random amount given range and time, start with 1-5 users over 3 minutes. 
+
+
+
