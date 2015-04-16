@@ -92,33 +92,33 @@ Wiki: http://gatling.io/docs/2.0.0-RC2/session/feeder.html#feeder
 http://gatling.io/docs/2.0.0-RC2/general/operations.html
 
 ###Task 1:
-Download Gatling
+1)download Gatling
 
-Unzip and go into /bin file
+2)unzip and go into /bin file
 
-Open the recorder.sh
+3)open the recorder.sh
 
-Before recording close all browser windows
+4)before recording close all browser windows
 
-Set proxy to localhost:8000 (in your browser)
+5)set proxy to localhost:8000 (in your browser)
 
-Name the package and class
+6)name the package and class
 
-Start recording
+7)start recording
 
-Go to your endpoint (in the browser)
+8)go to your endpoint (in the browser)
 
-Stop recording
+9)stop recording
 
-Exit the recorder
+10)exit the recorder
 
-Open the generated scala file in /user-files/simulations
+11)open the generated scala file in /user-files/simulations
 
-Change from 1 to 20 users.
+12)change from 1 to 20 users.
 
-Run the gatling.sh & run your new scenario
+13)run the gatling.sh & run your new scenario
 
-View the report
+14)view the report
 
 ###Task 2:
 To the current scenario add another GET request http://45.55.151.43/nimrod.php?error=1
