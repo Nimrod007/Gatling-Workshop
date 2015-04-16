@@ -47,6 +47,6 @@ class Simple2 extends Simulation {
 
 
 	//first scenario will be all 10 users at once
-	//second scenario starts with 10 until 50 users in random spread over 3 minutes
-	setUp(scn.inject(atOnceUsers(20)), otherScn.inject(rampUsersPerSec(10) to(50) during(3 minutes) randomized)).protocols(httpProtocol)
+	//second scenario will start 1-5 new users per seconds during 3 minutes
+	setUp(scn.inject(atOnceUsers(20)), otherScn.inject(rampUsersPerSec(1) to(5) during(3 minutes) randomized)).protocols(httpProtocol)
 }
